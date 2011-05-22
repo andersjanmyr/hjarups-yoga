@@ -78,3 +78,5 @@ capybara-*html
 .rvmrc
 .rvmrc.*
 
+public/stylesheets/*.css
+
