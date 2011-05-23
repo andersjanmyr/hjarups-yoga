@@ -26,12 +26,18 @@ header {
   @include border-radius($default-radius, $default-radius, 0, 0);
   margin-top: 1.5em;
   #logo {
-    font: 1.2em Tahoma, Verdana, Arial, sans-serif;
     padding-top: 1em;
     padding-left: 1em;
     line-height: .4em;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: normal;
+    h1 {
+      font-weight: normal;
+    }      
     h2 {
+      font-weight: normal;
       padding-left: .5em;
+      font-size: 1.1em;
     }
   }
   img {
