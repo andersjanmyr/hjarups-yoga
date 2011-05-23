@@ -79,4 +79,5 @@ capybara-*html
 .rvmrc.*
 
 public/stylesheets/*.css
+.livereload
 
