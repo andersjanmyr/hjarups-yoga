@@ -95,6 +95,13 @@ header {
     color: #222;
     padding: 20px;
     background: white;
+    a, a:visited {
+      color: #444;
+    }
+    a:hover, a:active {
+      color: #444;
+      font-weight: bold;
+    }
   }
 
   #side_body_content {
@@ -102,6 +109,14 @@ header {
     height: 100%;
     width: 24%;
     color: white;
+    a, a:visited {
+      color: white;
+    }
+    a:hover, a:active {
+      color:white;
+      font-weight: bold;
+    }
+
   }
 }
 
