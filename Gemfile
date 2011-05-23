@@ -60,5 +60,6 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'dalli'
 gem 'sass'
 gem 'hoptoad_notifier'
+gem 'heroku'
 
 # END USER DEFINED
