@@ -1,15 +1,81 @@
 @import url('refinery/application.css');
+@import "mixins.scss";
+
+$page-width: 760px;
+$body-color-top: #ffe;
+$body-color-bottom: #dfa;
+
+$default-radius: .8em;
+
 
 body {
-  background: #DDD;
   font-family: Verdana;
   font-size: 13px;
   line-height: 18px;
+  @include background-gradient($body-color-top, $body-color-bottom);
 }
 #page_container {
-  width: 760px;
   margin: auto;
+  border: 2px gray solid;
 }
+
+header {
+  width: $page-width;
+  @include background-gradient(#888, #222);
+  color: white;
+  @include border-radius($default-radius, $default-radius, 0, 0);
+  margin-top: 1.5em;
+  #logo {
+    font: 1.2em Tahoma, Verdana, Arial, sans-serif;
+    padding-top: 1em;
+    padding-left: 1em;
+    line-height: .4em;
+    h2 {
+      padding-left: .5em;
+    }
+  }
+  img {
+    width: $page-width;
+    height: 10em;
+  }
+}
+
+#page {
+  width: $page-width;
+}
+
+#menu ul {
+  position: relative;
+  top: -31px;
+  list-style: none;
+  padding: 0px;
+  z-index: 10;
+  color: white;
+  li {
+    float: left;
+    margin-right: 10px;
+    a, a:visited {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none;
+      background: #333;
+      color: white;
+      @include border-radius($default-radius, $default-radius, 0, 0);
+    }
+    a:hover {
+      background: #111;
+    }
+    a:active {
+      background: #111;
+      font-weight: bold;
+    }
+  }
+  li.selected a{
+    background: #111;
+  }
+}
+
+
 
 #body_content, #side_body_content {
   float: left;
@@ -19,23 +85,4 @@ body {
   padding: 20px;
 }
 
-#menu ul {
-  list-style: none;
-  padding: 0px;
-}
-
-#menu ul li {
-  float: left;
-  margin-right: 10px;
-}
-
-#menu ul li a {
-  display: block;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-
-#menu ul li.selected a, #menu ul li a:hover {
-  background: #CCC;
-}
 

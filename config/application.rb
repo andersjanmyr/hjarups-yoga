@@ -8,6 +8,8 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Equilo
   class Application < Rails::Application
+    config.middleware.insert_before(ActionDispatch::Static, Rack::Static,
+              :root => "tmp", :urls => ["/stylesheets/application.css"])
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
