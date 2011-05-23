@@ -82,13 +82,25 @@ header {
 }
 
 
-
-#body_content, #side_body_content {
-  float: left;
-  width: 45%;
+#page {
   background: white;
-  color: #333;
-  padding: 20px;
+  margin-top: -2em;
+  #body_content {
+    float: left;
+    width: 70%;
+    color: #222;
+    padding: 20px;
+  }
+
+  #side_body_content {
+    float: right;
+    height: 100%;
+    width: 24%;
+    @include background-gradient(#333, #fff);
+  }
 }
 
+footer {
+    width: $page-width;
+}
 
