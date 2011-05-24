@@ -7,13 +7,16 @@ $body-color-bottom: #dfa;
 
 $default-radius: .8em;
 
+$header-font: Gill Sans / Gill Sans MT, sans-serif;
+
 
 body {
-  font-family: Verdana;
-  font-size: 13px;
+  font-family: Century Gothic, sans-serif;
+  font-size: 14px;
   line-height: 18px;
   @include background-gradient($body-color-top, $body-color-bottom);
 }
+
 #page_container {
   margin: auto;
   border: 2px gray solid;
@@ -32,7 +35,7 @@ header {
     padding-left: 1em;
     padding-bottom: .7em;
     line-height: .4em;
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: $header-font;
     font-weight: normal;
     h1 {
       font-weight: normal;
@@ -54,6 +57,7 @@ header {
 }
 
 #menu ul {
+  font-family: $header-font;
   position: relative;
   top: -31px;
   list-style: none;
@@ -101,6 +105,9 @@ header {
     a:hover, a:active {
       color: #444;
       font-weight: bold;
+    }
+    p:first-letter { 
+      font-size: 24px;
     }
   }
 
