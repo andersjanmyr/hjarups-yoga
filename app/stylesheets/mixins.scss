@@ -26,7 +26,7 @@
 }
 
 @mixin background-gradient($top, $bottom) {
-  background: $top;
+  background: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom));
   background: -webkit-linear-gradient(top, $top, $bottom);
   background: -moz-linear-gradient(top, $top, $bottom);
   background: -ms-linear-gradient(top, $top, $bottom);
