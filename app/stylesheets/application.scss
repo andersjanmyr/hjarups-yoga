@@ -2,8 +2,10 @@
 @import "mixins.scss";
 
 $page-width: 760px;
-$body-color-top: #ffe;
-$body-color-bottom: #dfa;
+$body-color-top: #ffffee;
+$body-color-bottom: #ddffaa;
+$header-color-top: #ffffee;
+$header-color-bottom: #ddffaa;
 
 $default-radius: .8em;
 
@@ -24,13 +26,13 @@ body {
 
 header {
   width: $page-width;
-  @include background-gradient(#888, #222);
+  @include background-gradient($header-color-top, $header-color-bottom); 
   color: white;
   @include border-radius($default-radius, $default-radius, 0, 0);
   margin-top: 1.5em;
   #logo {
     @include border-radius($default-radius, $default-radius, 0, 0);
-    @include background-gradient(#888, #222);
+    @include background-gradient($header-color-top, $header-color-bottom); 
     padding-top: .7em;
     padding-left: 1em;
     padding-bottom: .7em;
@@ -131,7 +133,7 @@ header {
 
 footer {
   width: $page-width - 10px;
-  @include background-gradient(#888, #222);
+  @include background-gradient($header-color-top, $header-color-bottom); 
   color: white;
   @include border-radius(0, 0, $default-radius, $default-radius);
   padding: .5em 0;
