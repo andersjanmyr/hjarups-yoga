@@ -13,7 +13,7 @@ gem 'fog'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms', '= 1.0.0'
+gem 'refinerycms', '= 1.0.4'
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
